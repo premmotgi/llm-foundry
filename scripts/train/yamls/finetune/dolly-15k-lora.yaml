@@ -90,7 +90,7 @@ algorithms:
     clipping_type: norm
     clipping_threshold: 1
 
-max_duration: 2ep
+max_duration: 1ep
 eval_interval: 1ep
 global_train_batch_size: 16
 eval_first: false
