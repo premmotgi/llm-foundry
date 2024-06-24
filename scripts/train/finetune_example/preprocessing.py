@@ -49,3 +49,12 @@ def multiple_choice(
         'prompt': PROMPT_FORMAT.format(query=query, options=options),
         'response': inp['choices'][inp['gold']],
     }
+
+
+#preprocessing function for dolly-15-k. You will need to pass this to YAML file above if you plan to use.
+def format_instruction(sample):
+     
+    return {
+        'prompt': sample['instruction'],
+        'response': sample['response']
+    }
