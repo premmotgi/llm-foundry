@@ -40,6 +40,7 @@ tokenizer:
 train_loader:
   name: finetuning
   dataset:
+    preprocessing_fn: finetune_example.preprocessing:format_instruction
     split: train
     hf_name: databricks/databricks-dolly-15k
     shuffle: true
@@ -58,6 +59,7 @@ train_loader:
 eval_loader:
   name: finetuning
   dataset:
+    preprocessing_fn: finetune_example.preprocessing:format_instruction
     split: train
     hf_name: databricks/databricks-dolly-15k
     shuffle: false
